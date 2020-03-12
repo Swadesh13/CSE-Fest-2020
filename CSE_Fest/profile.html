@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>User Profile</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body  {
+            background-image: url("https://wallpaperaccess.com/full/1076433.jpg");
+        }
+        #myBtn {
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn bmd-btn-fab btn-outline-primary" id="myBtn" onclick="openNav()">
+        <i class="material-icons">more_vert</i>
+    </button>
+
+    
+    <div id="mySidenav" class="sidenav list-group">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Your Profile</a>
+        <hr><br>
+        <a href="#">Events</a>
+        <a href="#">Team</a>
+        <a href="#">Sponsors</a>
+        <a href="#">Contact</a>
+        <a href="#">Log Out</a>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 mx-auto">
+                <div class="card" style="opacity:0.4;">
+                    <h4 class="text-center text-dark">Name: Firstname Lastname</h4>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="opacity:0.4;">
+                    <h4 class="text-center text-dark">Email: Demo@user.com</h4>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="card" style="opacity:0.4;">
+                    <h4 class="text-center text-dark">College: Jadavpur University</h4>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="opacity:0.4;">
+                    <h4 class="text-center text-dark">Graduation Year: YYYY</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
