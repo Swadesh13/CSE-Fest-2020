@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head>
+    <title>User Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    
+</head>
+<body>
+
+    <button class="btn bmd-btn-fab btn-outline-primary" type="button" id="myBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="openNav()">
+        <i class="material-icons">more_vert</i>
+    </button>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="btn bmd-btn-fab btn-outline-primary" type="button" id="ex4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="openNav()">
+                <i class="material-icons">more_vert</i>
+            </button>
+            <h3 class="navbar-brand mx-auto" style="font-size:x-large;">Welcome User</h3>
+        </nav>
+    </header>
+    <div id="mySidenav" class="sidenav list-group">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="profile.html">Profile</a>
+        <a href="#">Events</a>
+        <a href="#">Team</a>
+        <a href="#">Sponsors</a>
+        <a href="#">Contact</a>
+        <a href="#">Log Out</a>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8 mx-auto">
+                <div class="card">
+                    <div class="card-body bg-dark" style="padding:0;">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="Dot_Slash.jpg" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-dark text-center">
+                        <footer class="text-light"><h4>Countdown ends in:   <cite title="Source Title"><text id="demo"></text></cite></h4></footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-8 mx-auto">
+                <div class="card  text-center">
+                    <div class="card-header bg-dark">
+                        <h3 class="text-light">Schedule</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="text">Event Starts on Mar 31, 2020 !</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-8 mx-auto">
+                <div class="card  text-center">
+                    <div class="card-header bg-dark">
+                        <h3 class="text-light">Updates</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-md-8 mx-auto">
+                <div class="row">
+                    <div class="col-sm-6 mx-auto">
+                        <div class="container-fluid">
+                            <div class="card  text-center">
+                                <img class="card-img-top" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2r0Th?ver=5b7d" alt="Card image cap" style="min-height:225px; max-height: 225px;">
+                                <div class="card-body" style="min-height:100px; max-height: 100px;">
+                                    <h5 class="card-title">Our New Sponsor</h5>
+                                    <p class="card-text">Microsoft joins us as our new Sponsor</p>
+                                </div>
+                                <p></p>
+                                <div class="card-footer" style="min-height:50px; max-height: 50px;">
+                                    <a href="#" class="card-link">View Our Sponsors</a>
+                                    <a href="#" class="card-link">View details here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6 mx-auto">
+                        <div class="container-fluid">
+                            <div class="card  text-center">
+                                <img class="card-img-top" src="https://media.istockphoto.com/photos/computer-crime-concept-picture-id516607038?k=6&m=516607038&s=612x612&w=0&h=qWc8FfVYuEVteLMF7r_igo46NsJx5DWC0BGo142sdPo=" alt="Card image cap" style="min-height:225px; max-height: 225px;">
+                                <div class="card-body" style="min-height:100px; max-height: 100px;">
+                                    <h5 class="card-title">Hack-e-thon</h5>
+                                    <p class="card-text">Dot Slash Team introduces a new hackathon event as part of the fest 2020</p>
+                                    
+                                </div>
+                                <p></p>
+                                <div class="card-footer"  style="min-height:50px; max-height: 50px;">
+                                    <a href="#" class="card-link">View Other Events</a>
+                                    <a href="#" class="card-link">View details here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-8 mx-auto">
+                <div class="card  text-center">
+                    <div class="card-header bg-dark">
+                        <h3 class="text-light">Event Statistics</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card bg-dark">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+      <footer class="footer text-center bg-dark" style="padding: 20px;">
+        <div class="container">
+            <i class="material-icons" style="color:lightgray;">
+                copyright
+            </i>
+          <span class="text-light small">Made By the Department of Computer Science and Enineering, JU</span>
+        </div>
+      </footer>
+
+      
+
+</body>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+    <script> 
+        var deadline = new Date("Mar 31, 2020 00:00:00").getTime(); 
+        var x = setInterval(function() { 
+            var now = new Date().getTime(); 
+            var t = deadline - now; 
+            var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+            var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+            var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+            document.getElementById("demo").innerHTML = days + "d "  + hours + "h " + minutes + "m " + seconds + "s "; 
+                if (t < 0) { 
+                    clearInterval(x); 
+                    document.getElementById("demo").innerHTML = "The Event Has Started"; 
+                } 
+        }, 1000); 
+    </script> 
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'polarArea',
+
+            // The data for our dataset
+            data: {
+                labels: ['Coding', 'Maths', 'Electronics', 'Business', 'Misc'],
+                datasets: [{
+                    label: 'Events',
+                    borderColor: 'rgba(255,255,255,1)',
+                    backgroundColor: [
+                        'rgba(255,150,220,0.9)',
+                        'rgba(0,150,220,0.9)',
+                        'rgba(255,0,220,0.9)',
+                        'rgba(255,150,0,0.9)',
+                        'rgba(255,15,22,0.9)',
+                    ],
+                    data: [4, 2, 1, 2, 3],
+                    
+                }],
+            },
+
+            // Configuration options go here
+            options: {
+                layout: {
+                    padding: 20
+                },
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels: {
+                        fontColor: 'rgba(150, 150, 255,1)',
+                        padding:15,
+                        fontSize:15 
+                    },
+                },
+                title: {
+                    display: true,
+                    position:'bottom',
+                    fontColor:'rgba(150, 255, 150,0.9)',
+                    text: 'Events',
+                    fontSize: 40
+                },
+                scale: {            
+                    ticks: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    </script>
+
